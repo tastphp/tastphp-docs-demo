@@ -7,3 +7,9 @@ business_config:
       resource: FrontBundle/Config/config.yml
   common_config:
       resource: Common/Config/config.yml
+  backBundle_config:
+      resource: BackBundle/Config/config.yml
+  backBundle_config:
+      resource: BackBundle/Config/config.yml
+  backBundle_config:
+      resource: BackBundle/Config/config.yml

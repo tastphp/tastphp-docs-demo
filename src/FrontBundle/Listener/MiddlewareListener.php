@@ -10,12 +10,12 @@ class MiddlewareListener
     {
         echo "onMiddlewareAction ~";
 
-        $csrfTokenService = $event->getParameters()['csrfToken'];
-        dump($csrfTokenService);
-
-        $token = $csrfTokenService->generate();
-        dump($token);
-        $validation = $csrfTokenService->validate($token);
-        dump($validation);
+//        $csrfTokenService = $event->getParameters()['csrfToken'];
+//        dump($csrfTokenService);
+//
+//        $token = $csrfTokenService->generate();
+//        dump($token);
+//        $validation = $csrfTokenService->validate($token);
+//        dump($validation);
     }
 }

@@ -1,3 +1,9 @@
 # for production
 FrontBundle:
     resource: FrontBundle/Config/routes.yml
+BackBundle:
+    resource: BackBundle/Config/routes.yml
+BackBundle:
+    resource: BackBundle/Config/routes.yml
+BackBundle:
+    resource: BackBundle/Config/routes.yml

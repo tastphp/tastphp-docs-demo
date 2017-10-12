@@ -16,7 +16,8 @@ class FooController extends Controller
 //        dump($request->getQueryParams());
 //        echo "hello FooController Action ~";
         dump($request);
+        echo $request->getMethod();
         $symfonyRequest = RequestAdapter::convertSymfonyRequest($request);
-        dump($symfonyRequest);
+//        dump($symfonyRequest);
     }
 }
