@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function indexAction()
     {
-        echo "<br> indexAction ~<br>";
+        echo "indexAction ~<br>";
 //        $logger = $this->get('logger');
 //        $logger::info("indexAction,time:" . time());
 //        $logger::info("indexAction,time:" . time(),['name1'=>'tastphp~',"name2"=>"tastphp!"]);
