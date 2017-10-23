@@ -10,7 +10,15 @@ class AppKernel extends Kernel
 {
     public function __construct(array $values = [])
     {
-//        $this->replaceListener(AppEvent::MIDDLEWARE,MiddlewareListener::class.'@onMiddlewareAction');
+        $this->registerMiddlewareListener(MiddlewareListener::class, "onMiddlewareAction");
+        $this->registerCsrfTokenService();
+        $this->registerTwigService();
+
+//        $this->registerRedisService();
+        $this->registerLoggerService();
+//        $this->registerDoctrineService();
+//        $this->registerJwtService();
+//        $this->registerTwigService();
         parent::__construct($values);
     }
 }

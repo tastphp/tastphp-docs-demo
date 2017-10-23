@@ -8,8 +8,8 @@ class MiddlewareListener
 {
     public function onMiddlewareAction(MiddlewareEvent $event)
     {
-        echo "onMiddlewareAction ~";
-
+//        echo "onMiddlewareAction ~";
+//
 //        $csrfTokenService = $event->getParameters()['csrfToken'];
 //        dump($csrfTokenService);
 //

@@ -11,6 +11,9 @@ require(__DIR__ . '/../vendor/autoload.php');
 
 define('__IMPORT_DIR__', __DIR__ . '/../vendor/tastphp/framework/src/Framework');
 define('__EXPORT_DIR__', __DIR__ . '/..');
+define('__BASEDIR__', __DIR__ . '/..');
+define('APP_VERSION', 'v1.3.6');
+
 chdir(__DIR__ . '/../config');
 
 $appConfig = Yaml::parse(file_get_contents('app.yml'));
@@ -37,6 +40,8 @@ $commands[] = new MigrationsCommand\VersionCommand();
 $commands[] = new \TastPHP\Framework\Console\Command\GenerateEntityServiceCommand();
 $commands[] = new \TastPHP\Framework\Console\Command\GenerateServiceCommand();
 $commands[] = new \TastPHP\Framework\Console\Command\GenerateBundleCommand();
+$commands[] = new \TastPHP\Framework\Console\Command\CacheConfigCommand();
+$commands[] = new \TastPHP\Framework\Console\Command\CacheRouteCommand();
 
 $cli->addCommands($commands);
 
