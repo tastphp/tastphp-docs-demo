@@ -16,7 +16,8 @@ class AppKernel extends Kernel
 
         $this->registerRedisService();
         $this->registerCacheService();
-//        $this->registerLoggerService();
+        $this->registerQueueService();
+        $this->registerLoggerService();
 //        $this->registerDoctrineService();
 //        $this->registerJwtService();
 //        $this->registerTwigService();

@@ -12,6 +12,7 @@ class HomeController extends Controller
 {
     public function indexAction(ServerRequestInterface $request)
     {
+        $this->get('queue')->put($this->get('tube'), json_encode(['queue msg'=>"hi,tastphp framework"]));
 //        dump($this->get('redis'));
 //        dump($this->get('redisCache'));
         $this->get('eventDispatcher')->dispatch('test.event', new Event());
