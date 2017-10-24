@@ -2,7 +2,7 @@ home:
       pattern: /
       parameters:
         _controller: Front@Home::index
-        methods:  [GET]
+        methods:  [GET,PUT]
         routeName: home
 Foo:
       pattern: /foo

@@ -1,0 +1,5 @@
+test.event:
+  event: test.event
+  listener: TastPHP\FrontBundle\Listener\TestListener
+  callback: onTestAction
+  priority: 0
