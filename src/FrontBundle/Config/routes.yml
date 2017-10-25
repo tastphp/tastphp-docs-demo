@@ -4,9 +4,9 @@ home:
         _controller: Front@Home::index
         methods:  [GET,PUT]
         routeName: home
-Foo:
+foo:
       pattern: /foo
       parameters:
         _controller: Front@Foo::index
         methods:  [GET]
-        routeName: Foo
+        routeName: foo

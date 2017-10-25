@@ -18,7 +18,7 @@ class AppKernel extends Kernel
         $this->registerCacheService();
         $this->registerQueueService();
         $this->registerLoggerService();
-//        $this->registerDoctrineService();
+        $this->registerDoctrineService();
 //        $this->registerJwtService();
 //        $this->registerTwigService();
         parent::__construct($values);

@@ -2229,12 +2229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tastphp/framework.git",
-                "reference": "02f9a2def4326740bd46f1cdf7e4cf52d762c8af"
+                "reference": "d0407a26f500f95a16f3d9168d218300314a2c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/tastphp/framework/02f9a2def4326740bd46f1cdf7e4cf52d762c8af.zip",
-                "reference": "02f9a2def4326740bd46f1cdf7e4cf52d762c8af",
+                "url": "https://files.phpcomposer.com/files/tastphp/framework/d0407a26f500f95a16f3d9168d218300314a2c80.zip",
+                "reference": "d0407a26f500f95a16f3d9168d218300314a2c80",
                 "shasum": ""
             },
             "require": {
@@ -2291,7 +2291,7 @@
                 "framework",
                 "tastphp"
             ],
-            "time": "2017-10-24 07:48:55"
+            "time": "2017-10-25 07:57:43"
         },
         {
             "name": "twig/twig",

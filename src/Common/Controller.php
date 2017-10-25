@@ -27,7 +27,7 @@ class Controller
     }
 
     /**
-     * @param $name
+     * @param $name [example: User.UserService]
      * @return mixed
      */
     protected function registerService($name)
