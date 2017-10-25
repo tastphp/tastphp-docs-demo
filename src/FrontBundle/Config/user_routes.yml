@@ -1,0 +1,7 @@
+## RESRFul User API Demo
+user_create:
+      pattern: /user/add
+      parameters:
+        _controller: Front@User::add
+        methods:  [POST,GET]
+        routeName: user_create
