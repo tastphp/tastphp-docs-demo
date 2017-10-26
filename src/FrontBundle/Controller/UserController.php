@@ -3,6 +3,7 @@
 namespace TastPHP\FrontBundle\Controller;
 
 use TastPHP\Common\Controller;
+use TastPHP\Framework\Http\Request;
 
 class UserController extends Controller
 {
@@ -17,19 +18,31 @@ class UserController extends Controller
         }
     }
 
-    public function getAction()
+    public function getAction($id)
     {
+        $result = $this->getUserService()->getUser($id);
+        if ($result) {
+            var_dump($result);
+        }
+    }
+
+    public function updateAction(Request $request)
+    {
+        $data = $request->request->all();
+        $updateUser = [];
+        if (!empty($id = $data['id']) && !empty($userName = $data['name'])) {
+            $updateUser['username'] = $userName;
+            $result = $this->getUserService()->updateUser($id, $updateUser);
+            var_dump($result);
+        }
 
     }
 
-    public function updateAction()
+    public function deleteAction(Request $request)
     {
-
-    }
-
-    public function deleteAction()
-    {
-
+        $id = $request->request->get('id');
+        $result = $this->getUserService()->removeUser($id);
+        var_dump($result);
     }
 
     protected function getUserService()

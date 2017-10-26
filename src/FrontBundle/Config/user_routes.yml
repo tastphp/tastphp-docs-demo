@@ -3,5 +3,24 @@ user_create:
       pattern: /user/add
       parameters:
         _controller: Front@User::add
-        methods:  [POST,GET]
+        methods:  [POST]
         routeName: user_create
+user_get:
+      pattern: /user/{id}
+      parameters:
+        _controller: Front@User::get
+        methods:  [GET]
+        routeName: user_get
+        id: \d+
+user_update:
+      pattern: /user/update
+      parameters:
+        _controller: Front@User::update
+        methods:  [PUT]
+        routeName: user_update
+user_delete:
+      pattern: /user/delete
+      parameters:
+        _controller: Front@User::delete
+        methods:  [DELETE]
+        routeName: user_delete
